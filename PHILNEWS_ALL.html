@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🧠 NextGen, Latest News</title>
+
+    <!-- Google Font for News Headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="Bar" id="topbar">
+        <img src="WebLogo.png" class="Logo" id="logo">    
+        <div class="site-title" id="title">
+            <span>INTELLIGENT</span><br>
+            <span>BEINGS</span>
+        </div>
+        <div class="Buttons">
+            <a class="Button1 active" href="PHILNEWS_ALL.html">PHIL NEWS</a>
+            <a class="Button2" href="FEATURED.html">FEATURED</a>
+            <a class="Button3" href="EDITORIAL.html">EDITORIAL</a>
+            <a class="Button4" href="SPORTS.html">SPORTS</a>
+            <a class="Button5" href="SCI_TECH.html">SCIENCE & TECHNOLOGY</a>
+        </div>
+
+    </div>
+
+    <div class="text">
+        <pre>
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            scroll down
+            
+        </pre>
+    </div>
+
+    <script>
+    const spans = document.getElementById("title");
+    const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+    spans.style.color = "white";
+    buttons.forEach(btn => {
+        
+    });
+
+    window.addEventListener("scroll", function() {
+
+        const bar = document.getElementById("topbar");
+        const logo = document.getElementById("logo");
+        const spans = document.getElementById("title"); 
+        const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+
+        if (window.scrollY > 45) {
+
+            bar.style.height = "65px";
+            bar.style.backgroundColor = "white";
+            spans.style.color = "black";
+            spans.style.transform = "scale(0.5) translateY(-15px) translateX(-90px)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "50px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(4px) translateX(13px)`; 
+            });
+            document.body.classList.add("scrolled");
+
+        } else {
+
+            bar.style.height = "100px";
+            bar.style.backgroundColor = "#153c7a";
+            spans.style.color = "white";
+            spans.style.transform = "scale(1) translateY(0) translateX(0)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "85px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(0px)`; 
+            });
+            document.body.classList.remove("scrolled"); 
+        }
+    });
+    </script>
+
+</body>
+</html>
