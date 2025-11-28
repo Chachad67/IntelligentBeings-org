@@ -53,7 +53,11 @@ body {
 }
 
 .text {
-  font-size: 60px;
+  font-family: "NBC Futura", sans-serif;
+  padding-top: 20px;
+  padding-left: 10px;
+  line-height: 1; 
+  font-size: 30px;
 }
 
 /*Navigation Buttons*/
@@ -133,4 +137,5 @@ body.scrolled .Buttons a.active::after {
     background-color: black;
     transition: all 0.5s;
 }
+
 
