@@ -57,7 +57,7 @@ body {
   padding-top: 20px;
   padding-left: 10px;
   line-height: 1; 
-  font-size: 30px;
+  font-size: 15px;
 }
 
 /*Navigation Buttons*/
@@ -137,5 +137,6 @@ body.scrolled .Buttons a.active::after {
     background-color: black;
     transition: all 0.5s;
 }
+
 
 
