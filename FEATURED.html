@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🧠 Featured</title>
+
+    <!-- Google Font for News Headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="Bar" id="topbar">
+        <img src="WebLogo.png" class="Logo" id="logo">    
+        <div class="site-title" id="title">
+            <span>INTELLIGENT</span><br>
+            <span>BEINGS</span>
+        </div>
+        <div class="Buttons">
+            <a class="Button1" href="index.html">PHIL NEWS</a>
+            <a class="Button2 active" href="FEATURED.html">FEATURED</a>
+            <a class="Button3" href="EDITORIAL.html">EDITORIAL</a>
+            <a class="Button4" href="SPORTS.html">SPORTS</a>
+            <a class="Button5" href="SCI_TECH.html">SCIENCE & TECHNOLOGY</a>
+        </div>
+    </div>
+
+    <h1 class="Titles">The Sheikh Zayed Book Award Celebrates its 20th Anniversary</h1>
+   
+    <div class="Row">
+        <div class="Column">
+            <img src="Images/Featured1.png" alt="Awarding" width="110%" style="margin-left: 1.8%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+            <p class="Description"><i>Haruki Murakami: “An Immense Honor to Me”</i></p>
+        </div>
+        <div class="Column">
+            <p class="Description2"><i> 
+            “One of the most dynamic 
+            forces recognized globally 
+            of Arabic literature, 
+            thought, and scholarship,” 
+            Abu Dhabi’s Sheikh Zayed 
+            Book Award reaches two 
+            decades on the world
+            stage.</i>
+            </p>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <pre class="Paragraphs  ">
+        The Sheikh Zayed Book Award marks the 20th Anniversary next year, among one of the Arab world’s most prestigious prizes. 
+        This year’s honors that are awarded in April, were granted on such honored names as Hoda Barakat, a very popular Lebanese author, 
+        internationally renowned Haruki Murakami, a Japanese writer, and Andrew Peacock, a British historian.
+
+        Haruki Murakami said “Receiving the Sheikh Zayed Book Award from the United Arab Emirates comes as both a great surprise and an 
+        immense honor to me.”. He was awarded the Cultural Personality of the Year accolade for 2025.
+
+        “Arabic is a language with a long and rich storytelling tradition,” Murakami said, “and it is a great honor for me that my books 
+        have been translated and are being read in Arab countries. I believe that stories are a universal language. It is my sincere hope 
+        that by sharing good stories, people can connect with each other and that this can become a force, even if only a small one, that 
+        moves the world toward peace.”
+
+        Since the Sheikh Zayed program’s founding in 2006, there have been 136 awards conferred. New award categories have been added to 
+        highlight the breadth of stories, research, cultural contributions and ideas shared in the Arabic world. A translation grant was 
+        created in 2018 to support the publication of Arabic literature in new languages and markets around the world, and hundreds of 
+        international events have been staged to recognize Arabic culture.
+
+        In its 20 years, the Sheikh Zayed program has gained resonance in many parts of the world. This year, awards received more than 
+        4,000 submissions from 75 countries, with winners from Italy, Iraq, Lebanon, Morocco, the United Arab Emirates, the United 
+        Kingdom and Japan.
+
+        The Sheikh Zayed Book Award at the Abu Dhabi Arabic Language Center is an independent cultural and Tourism of Abu Dhabi with a 
+        stated goal of expanding Arabic literature and culture throughout the whole world.
+
+        In an interview of Publishers Weekly earlier this year, Barakat said “The organizers of this prize, at all levels, are doing a very 
+        serious job of supporting the Arabic language in total independence and freedom, and even with a view to an international dimension, 
+        since they are helping publishing houses to translate Arabic writers into all the languages of directives or ideology.”
+
+        By celebrating the work of these awarded writers, by supporting publishers around the world who hope to translate this work and bring 
+        them to new audiences, and through key events that illustrate the beauty of this culture, this history, this literature and science, 
+        the award’s organizers hope to build a bridge between the Arab world and many other cultures.
+
+    </pre>
+    <br>
+    <hr>
+    <br>
+    <h1 class="Titles">Max Verstappen Wins Round 23 in Qatar</h1>
+    <p class="Description"><i>In Round 23 of the 2025 F1, held at Circuit in Qatar, Max Verstappen once again proved why he’s the GOAT.</i></p>
+
+    <br>
+
+    <div class="Row">
+        <div class="Column">
+            <pre class="Paragraphs">
+            The race ran for 57 laps even though he started in third 
+            place on the grid, Max made a strong move right away. 
+            On turn 1, he passed two rivals (2 mclarens) and pushed 
+            forward hard.
+
+            A crash early in the race caused a safety car. Max used this
+            chance smartly by pitting for fresh tires while many drivers
+            stayed out. This helped him gain an advantage.When the
+            race went back to full speed, Max was already in front. His
+            rivals tried to catch him, but he stayed fast, managed his tires
+            well, and avoided mistakes.
+
+            At the finish line, Max crossed first winning the race by
+            nearly 8 seconds. Behind him was Oscar Piastri in second,
+            and Carlos Sainz in third.  
+            </pre>
+        </div>
+        <div class="Column">
+            <img src="Images/Featured2.png" alt="MaxVerstappen" width="100%" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <script>
+    const spans = document.getElementById("title");
+    const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+    spans.style.color = "white";
+    buttons.forEach(btn => {
+        
+    });
+
+    window.addEventListener("scroll", function() {
+
+        const bar = document.getElementById("topbar");
+        const logo = document.getElementById("logo");
+        const spans = document.getElementById("title"); 
+        const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+
+        if (window.scrollY > 45) {
+
+            bar.style.height = "65px";
+            bar.style.backgroundColor = "white";
+            spans.style.color = "black";
+            spans.style.transform = "scale(0.5) translateY(-15px) translateX(-90px)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "50px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(4px) translateX(13px)`; 
+            });
+            document.body.classList.add("scrolled");
+
+        } else {
+
+            bar.style.height = "100px";
+            bar.style.backgroundColor = "#153c7a";
+            spans.style.color = "white";
+            spans.style.transform = "scale(1) translateY(0) translateX(0)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "85px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(0px)`; 
+            });
+            document.body.classList.remove("scrolled"); 
+        }
+    });
+    </script>
+
+</body>
+</html>

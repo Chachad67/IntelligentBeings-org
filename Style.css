@@ -1,0 +1,272 @@
+/* Reset default gap */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "NBC Futura";
+    src: url("fonts/NBCFuturaMedium.ttf") format("truetype");
+}
+
+body {
+  background-color: #ffffff;
+  padding-top: 140px;
+}
+
+/* Top bar */
+.Bar {
+  background-color: #153c7a;
+  width: 100%;
+  height: 100px;
+  display: flex;
+
+  position: fixed;   
+  top: 0;            
+  left: 0;            
+  z-index: 999;   
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.5s ease;
+}
+
+.Logo {
+  padding-top: 15px;
+  height: 85px;
+  padding-left: 20px;
+  align-content: center;
+
+  transition: height 0.5s;
+}
+
+/* News-style title font */
+.site-title,
+.site-title span {
+  color: "white";
+  font-family: "NBC Futura", sans-serif;
+  padding-top: 20px;
+  padding-left: 5px;
+  line-height: 1; 
+  font-size: 30px;
+}
+
+/*Articles Properties*/
+.Titles {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 70px;
+}
+
+.Titles2 {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  font-size: 80px;
+}
+
+.ImagesCentered {
+  margin-left: 35%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
+
+.Images1 {
+  margin-left: 90px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
+
+.Images {
+  margin: 10px;
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
+
+.ExtraImages {
+    margin-top: 500px;
+    float: right;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Description2 {
+    font-size: 47px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Description {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 40px;
+}
+
+.Paragraphs0 {
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0px;
+    float: left;
+    padding-left: 0px;
+}
+
+.Paragraphs {
+    font-size: 21px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
+
+.Row {
+    display: flex;
+}
+
+.Column {
+    flex: 1;
+    padding: 10px;
+}
+
+/*Navigation Buttons*/
+.Buttons{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    font-family: "NBC Futura", sans-serif;
+    transition: transform 0.5s ease, color 0.5s ease;
+    align-items: center;
+}
+
+.Buttons:first-child {
+    margin-left: 20px;
+}
+
+.Buttons:last-child {
+    margin-right: 20px;
+}
+
+.Button1:hover,
+.Button2:hover,
+.Button3:hover,
+.Button4:hover,
+.Button5:hover {
+    background-color: transparent;
+    color: rgb(54, 54, 54);
+}
+
+.Buttons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.4s ease;
+}
+
+.Buttons a:hover {
+    color: rgb(54, 54, 54);
+}
+
+body.scrolled .Buttons a {
+    color: black;
+}
+
+body.scrolled .Buttons a:hover {
+    color: rgb(96, 143, 255);
+}
+
+.Button1 {order: 1;}
+.Button2 {order: 2;}
+.Button3 {order: 3;}
+.Button4 {order: 4;}
+.Button5 {order: 5;}
+
+.Buttons a {
+    position: relative;
+}
+
+/* Active underline */
+.Buttons a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+/* When scrolled */
+body.scrolled .Buttons a.active::after {
+    background-color: black;
+    transition: all 0.5s;
+}
+
+/*  Mobile support hell thingy. */
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    .Bar {
+        height: 80px;
+    }
+
+    .Logo {
+        height: 65px;
+        padding-left: 10px;
+    }
+
+    /* Buttons */
+    .Buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .Buttons a {
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* Images */
+    .Images,
+    .Images1,
+    .Images2,
+    .ExtraImages {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Text blocks */
+    .Paragraphs,
+    .Paragraphs1,
+    .Paragraphs3,
+    .Paragraphs3L {
+        padding-left: 15px;
+        padding-right: 15px;
+        float: none;
+        text-align: left;
+    }
+
+    /* Titles shrink */
+    .Titles {
+        font-size: 40px;
+    }
+
+    .Titles2 {
+        font-size: 50px;
+    }
+}

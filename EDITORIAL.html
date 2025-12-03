@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>📕 Editorial</title>
+
+    <!-- Google Font for News Headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="Bar" id="topbar">
+        <img src="WebLogo.png" class="Logo" id="logo">    
+        <div class="site-title" id="title">
+            <span>INTELLIGENT</span><br>
+            <span>BEINGS</span>
+        </div>
+        <div class="Buttons">
+            <a class="Button1" href="index.html">PHIL NEWS</a>
+            <a class="Button2" href="FEATURED.html">FEATURED</a>
+            <a class="Button3 active" href="EDITORIAL.html">EDITORIAL</a>
+            <a class="Button4" href="SPORTS.html">SPORTS</a>
+            <a class="Button5" href="SCI_TECH.html">SCIENCE & TECHNOLOGY</a>
+        </div>
+    </div>
+
+    <h1 class="Titles">“Is it better to study online or in a classroom?”</h1>
+    <p class="Description"><i>Have you ever gone to an online class just to play a game behind the screen? In most cases the answer is yes. Why?</i></p>
+
+
+    <pre class="Paragraphs">
+        Many students prefer face-to-face classes because they’re not as boring as online classes, and many would prefer to relax during 
+        suspension. Some students find it difficult to focus in class depending on their environment, whether someone's having a party next 
+        door or their siblings being noisy. That’s why I believe studying in a classroom is better. It helps students concentrate, interact
+        with others, ask questions, and understand lessons more clearly in real-time.
+
+        In a classroom, it’s much easier to stay focused. There’s a teacher right there, making sure everyone pays attention. If you don’t 
+        understand a topic, you can ask questions right away. Plus, there are fewer distractions compared to online classes. At home you 
+        might have your phone, games, or other things to distract you. For example, when I have an online class, I sometimes check social 
+        media or start playing games secretly in the background. In a classroom, it’s harder to get away with that, and it keeps everyone 
+        on track. When you’re physically present, you’re less likely to get sidetracked by random stuff around you.
+    </pre>
+    <img src="Images/Editorial2.png" class="ImagesCentered" width="400px">
+    <pre class="Paragraphs">
+        Another reason classroom learning is better is because students can interact with other people. When you’re in school, you can talk 
+        to classmates, make friends, and work together on projects/tasks. This helps you build teamwork and communication skills that you 
+        can’t really get from online classes. It also makes learning more fun because you don’t feel alone behind a screen. For example, 
+        group activities and class discussions help everyone share ideas and understand lessons better.  In online classes, it’s harder to 
+        connect with others because everyone is muted or has their camera off.
+
+        Students also understand lessons better when they study in a classroom. Teachers can explain topics more clearly and give examples on 
+        the board, which helps a lot. If someone doesn’t get the lesson, they can easily raise their hand and ask for help. In online classes, 
+        it can be harder to speak up or sometimes the internet connection gets in the way. When you’re learning in person, you can see the 
+        teacher’s expressions and demonstrations, making it easier to understand complex topics. Face-to-face learning helps students stay 
+        engaged and learn faster because they get real-time feedback and support.
+    </pre>
+    <img src="Images/Editorial3.png" class="ImagesCentered" width="400px">
+    <pre class="Paragraphs">
+        Overall, studying face-to-face is better and more recommended than studying online. It helps students focus more, communicate with 
+        others, and understand lessons clearly. While online learning may be easier for some people, classroom learning gives students the 
+        full experience of school. Being around teachers and classmates makes learning more fun and effective. That’s why I believe face-to-face 
+        classes are always the best way to learn.
+    </pre>
+
+    <hr>
+    <br>
+    <br>
+
+    <h1 class="Titles">Are Schools Doing Enough To Prevent Bullying?</h1>
+    <p class="Description"><i>Bullying has always existed, both online and in real life, but one question remains, are schools doing enough to prevent it? </i></p>
+
+    <pre class="Paragraphs">
+        Schools have posters and assemblies about anti-bullying and punishments, but do they really listen? Many students feel somewhat unheard 
+        about reporting their trauma, resulting in schools not doing enough.
+
+        A problem all students face is the fear of speaking up because they either feel somehow threatened by their bullies or fear being ignored. 
+        Even when students report bullying, some teachers somehow ignore them or tend to fail to report this. The lack of support towards these 
+        students can make them feel powerless or discourage them from seeking help. Studies show that students who feel powerless usually 
+        develop anxiety, depression, and low self-esteem.
+
+        Schools focus on defending against bullying when it has already happened. Defending against bullying before it has already started or, 
+        better, when it has just started is more important. Many schools focus on punishment instead of teaching students how to show kindness 
+        and treat others respectfully. Avoiding punishment and providing group activities and lessons about kindness can help students become 
+        more caring and supportive. Teaching students how to handle anger and solve problems without hurting others, they are less likely to bully.
+
+        Schools try to stop bullying with posters, assemblies, and giving punishments to those who bully, but sometimes these are not always good 
+        enough. Even though rules are set, many students still report bullying, and sometimes it doesn’t get solved. When students feel that no 
+        one is paying attention, bullying tends to get worst this leads to their grades and confidence getting affected. Posters and assemblies do 
+        not fix the problem of bullying. School needs personnel who watch closely, listen to students, and step in whenever needed.
+    </pre>
+
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+
+    <script>
+    const spans = document.getElementById("title");
+    const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+    spans.style.color = "white";
+    buttons.forEach(btn => {
+        
+    });
+
+    window.addEventListener("scroll", function() {
+
+        const bar = document.getElementById("topbar");
+        const logo = document.getElementById("logo");
+        const spans = document.getElementById("title"); 
+        const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+
+        if (window.scrollY > 45) {
+
+            bar.style.height = "65px";
+            bar.style.backgroundColor = "white";
+            spans.style.color = "black";
+            spans.style.transform = "scale(0.5) translateY(-15px) translateX(-90px)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "50px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(4px) translateX(13px)`; 
+            });
+            document.body.classList.add("scrolled");
+
+        } else {
+
+            bar.style.height = "100px";
+            bar.style.backgroundColor = "#153c7a";
+            spans.style.color = "white";
+            spans.style.transform = "scale(1) translateY(0) translateX(0)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "85px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(0px)`; 
+            });
+            document.body.classList.remove("scrolled"); 
+        }
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🏀 Sports</title>
+
+    <!-- Google Font for News Headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="Bar" id="topbar">
+        <img src="WebLogo.png" class="Logo" id="logo">    
+        <div class="site-title" id="title">
+            <span>INTELLIGENT</span><br>
+            <span>BEINGS</span>
+        </div>
+        <div class="Buttons">
+            <a class="Button1" href="index.html">PHIL NEWS</a>
+            <a class="Button2" href="FEATURED.html">FEATURED</a>
+            <a class="Button3" href="EDITORIAL.html">EDITORIAL</a>
+            <a class="Button4 active" href="SPORTS.html">SPORTS</a>
+            <a class="Button5" href="SCI_TECH.html">SCIENCE & TECHNOLOGY</a>
+        </div>
+    </div>  
+
+    <img src="Images/ChristianMcCaffrey.png" alt="Christian McCaffrey" class="Images" width="600px">
+
+    <h1 class = "Titles">
+        Christian McCaffrey leads 49ers to victory against former team Panthers and says “it’s really just business”
+    </h1>
+
+    <br>
+
+    <pre class="Paragraphs">
+        Christian McCaffrey helped the San Francisco 49ers to a 20-9 victory over his former team, the 
+        Carolina Panthers on Monday Night Football, he enjoyed a big night afterwards. 
+
+        The running back joined the Niners back in 2022, but this was his first time facing the team that 
+        drafted him back in 2017.
+
+        The 29 year old Christian McCaffrey seemed relaxed about the big night and set about leading 
+        his current team to a much-needed win. McCaffrey stood out as he gained 142 total yards and 
+        scored a touchdown.
+
+        After the game, McCaffrey told reporters “When it comes to playing in this league, you have to 
+        approach each week as similar as possible, stay in your routine,”
+
+        With his receiving performance, McCaffrey became just the third running back in league history 
+        to have over 50 yards in the air in at least 50 career games, along with Larry Centers and 
+        Marshal Faulk. 
+
+        While the 49ers may have won the game, the contest wasn’t pretty at times. San Francisco 
+        made multiple fouls in the first half, exemplified in part by an underwhelming performance from 
+        quarterback Brock Purdy.
+
+        Purdy was intercepted three times in the first half, which Carolina’s offense squandered, scoring 
+        only three points off the turnovers, but the signal-caller refused to blame a recent toe injury 
+        for his poor display. 
+
+        Meanwhile, the Panther’s, failed to capitalize on their opponents’ early struggles with 
+        quarterback Bryce Young who threw 18-of-29 for 169 yards, one touchdown and two 
+        interceptions.
+
+        After the Panthers safety Tre’Von Moehrig was seen hitting San Francisco receiver Jauan 
+        Jennings in the groin during the closing moments, Jennings responded by striking Moehrig in 
+        the head, leading frustrations to bubble over.
+
+        Moehrig, though, acknowledged he might be fined for his actions. 
+
+        The 49ers now have an 86% chance of making the playoffs, while the defeat means the 
+        Panthers now have just a 14% chance of reaching the postseason, despite sitting just half a 
+        game back of first in the NFC South.
+
+    </pre>
+
+    <hr>
+    <br>
+
+    <img src="Images/Jump.png" alt="Eldro Yulo" class="Images" width="600px">
+
+    <h1 class ="Titles">
+        Eldrew Yulo now training in Japan in hopes of making it to Olympics
+    </h1>
+
+    <br>
+
+    <pre class="Paragraphs">
+        Eldrew Yulo will head to Japan to continue his training after his campaign in the 3rd FIG Artistic 
+        Gymnastics Junior World Championships. 
+        
+        Although he didn't win a gold or silver, he took home 
+        two bronze medals for the floor and horizontal bar events
+
+        Eldrew Yulo is a Filipino male artistic gymnast. He was born on August 29, 2008 in Manila, 
+        Philippines. 
+        
+        In 2023, at the national games Palarong Pambansa, Yulo won six gold medals in the 
+        secondary boys’ artistic gymnastics division he defeat the 
+        dominating floor, vault, horizontal bar, pommel horse, all-around, and team events. 
+        
+        He also won 7 gold medals at 2023 Batang Pinoy. He became junior Asian champion vault in 2024. 
+
+        Most recently (2025) at the FIG Junior Artistic Gymnastics Championship, he won bronze medals 
+        in floor exercise and horizontal bar.
+
+        .Eldrew is the younger brother of two-time Olympic gold medalist Carlos Yulo, a world class 
+        gymnast and Olympic Champion. 
+        
+        He is viewed as a rising star individually not just as “Carlos’s 
+        younger brother” but as a promising gymnast on his own edge. 
+
+        As of late 2025, Eldrew has announced that he will move up to senior level competition next year, 
+        aiming to join the national team and eventually compete internationally at senior level. 
+        
+        He trained under Japanese coach Munehiro Kugimiya same coach of his brother Carlo. 
+        
+        His long term goal is to represent the Philippine at big international competition – 
+        possibly even the Olympics and build his own legacy. 
+
+    </pre>
+
+    <script>
+    const spans = document.getElementById("title");
+    const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+    spans.style.color = "white";
+    buttons.forEach(btn => {
+
+    });
+
+    window.addEventListener("scroll", function() {
+
+        const bar = document.getElementById("topbar");
+        const logo = document.getElementById("logo");
+        const spans = document.getElementById("title"); 
+        const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+
+        if (window.scrollY > 45) {
+
+            bar.style.height = "65px";
+            bar.style.backgroundColor = "white";
+            spans.style.color = "black";
+            spans.style.transform = "scale(0.5) translateY(-15px) translateX(-90px)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "50px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(4px) translateX(13px)`; 
+            });
+            document.body.classList.add("scrolled");
+
+        } else {
+
+            bar.style.height = "100px";
+            bar.style.backgroundColor = "#153c7a";
+            spans.style.color = "white";
+            spans.style.transform = "scale(1) translateY(0) translateX(0)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "85px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(0px)`; 
+            });
+            document.body.classList.remove("scrolled"); 
+        }
+    });
+    </script>
+
+</body>
+</html>

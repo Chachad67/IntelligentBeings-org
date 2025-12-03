@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🖥️ SCI-TECH</title>
+
+    <!-- Google Font for News Headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="Bar" id="topbar">
+        <img src="WebLogo.png" class="Logo" id="logo">    
+        <div class="site-title" id="title">
+            <span>INTELLIGENT</span><br>
+            <span>BEINGS</span>
+        </div>
+        <div class="Buttons">
+            <a class="Button1" href="index.html">PHIL NEWS</a>
+            <a class="Button2" href="FEATURED.html">FEATURED</a>
+            <a class="Button3" href="EDITORIAL.html">EDITORIAL</a>
+            <a class="Button4" href="SPORTS.html">SPORTS</a>
+            <a class="Button5 active" href="SCI_TECH.html">SCIENCE & TECHNOLOGY</a>
+        </div>
+    </div>
+
+    <h1 class="Titles">The Color That Shouldn’t Exist: Scientists Find Unexpected Blue on Ancient Artifact</h1>
+    <pre class="Description">
+        <i>A 13,000-year-old  stone from Germany preserves traces of an unexpected blue pigment, challenging 
+        long-held assumptions about Palaeolithic colour use. </i>
+    </pre>
+
+    <hr>
+
+    <div class="Row">
+        <div class="Column">
+            <pre class="Paragraphs">
+                In a groundbreaking discovery that sheds 
+                new light on the prehistoric origins of 
+                art and human creativity, researchers 
+                from Aarhus University have identified 
+                the earliest known use of blue pigment 
+                in Europe.
+            </pre>
+
+            <img src="Images/Science1.jpg" class="Images1" width="350px">
+
+            <pre class="Paragraphs">
+                At the Final Paleolithic site of Mühlheim-
+                Dietesheim in Germany, archaeologists 
+                from Aarhus University identified a faint 
+                blue residue on a stone artifact that is 
+                roughly 13,000 years old. After applying 
+                several advanced scientific techniques, 
+                the team determined that the material was 
+                the mineral pigment azurite, known for 
+                its intense blue color and not previously 
+                documented in Europe’s Paleolithic 
+                artistic record.
+
+                “This challenges what we thought we knew 
+                about Paleolithic pigment use,” said Dr. Izzy 
+                Wisher, the lead author of the study.
+
+                A Stone Palette Reveals New Possibilities
+                The stone bearing the azurite traces was 
+                originally thought to be an oil lamp. Now, 
+                it appears to have been a mixing surface or 
+                palette for preparing blue pigments — hinting 
+                at artistic or cosmetic traditions that remain 
+                    largely invisible today.
+
+            </pre>
+        </div>
+        <div class="Column">
+            <pre class="Paragraphs">
+                Until recently, researchers assumed that 
+                Paleolithic artists relied almost entirely on 
+                red and black pigments, since virtually no
+                other colors appear in surviving artworks from 
+                this era. Many experts attributed this pattern 
+                to either the scarcity of blue minerals or their 
+                limited appeal.
+                Because blue tones are missing from known 
+                Paleolithic art, the new finding raises the 
+                possibility that blue pigments were instead 
+                applied to the body or used to color textiles, 
+                activities that rarely preserve well in the 
+                archaeological record. 
+            </pre>
+
+            <img src="Images/Science2.jpg" class="Images1" width="350px">
+
+            <pre class="Paragraphs">
+                “The presence of azurite shows that Paleolithic 
+                people had a deep knowledge of mineral pigments 
+                and could access a much broader color palette 
+                than we previously thought – and they may have 
+                been selective in the way they used certain 
+                colors,” Izzy Wisher says.
+
+                The findings urge a rethink of Paleolithic art 
+                and color use, opening new avenues for exploring 
+                how early humans expressed identity, status, and 
+                beliefs through materials far more varied and 
+                vibrant than previously imagined.
+            </pre>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+    
+    <h1 class="Titles">How Was Nuclear Fission Created?: The Story Of Lise Meitner</h1>
+
+    <pre class="Paragraphs">
+        Lise Meitner was an Austrian-Swedish physicist who helped discover nuclear fission, the process that splits atom and releases 
+        huge amounts of energy. Her work let to major scientific advances, including nuclear power and medical applications. 
+    </pre>
+    <div class="Row">
+        <div class="Column">
+            <pre class="Paragraphs">
+                Even though she made major contribution, she was not 
+                given the Nobel Prize, which may believe she deserved. 
+                She is remembered today as one of the most important 
+                woman in science. 
+
+                Her most important work happened in 1938. She worked in 
+                Berlin, Germany and later continued her research in Sweden 
+                after fleeing from the Nazis. She studied atoms to 
+                understand how matter works and why certain elements 
+                behave the way they do. 
+
+                Meitner lived her life in the service of science. She 
+                never married and had no children. Her main recreation 
+                was walking, she enjoyed going on very long walks. She 
+                also loved music and regurlary attend concerts. 
+            </pre>
+        </div>
+        <div class="Column">
+            <img src="Images/Science3.png" class="Images" width="350px">
+        </div>
+    </div>
+
+    <pre class="Paragraphs">
+        Lise Meitner died at the age of 89 in Cambridge on October 27, 1968, after being weakened by a second broken hip and a number of 
+        small strokes. She was buried in the churchyard of St James Church, Bramley, close to where her youngest brother had been buried 
+        a few years previously.
+    </pre>
+
+    <br>
+    <hr>
+    <br>
+
+    <script>
+    const spans = document.getElementById("title");
+    const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+    spans.style.color = "white";
+    buttons.forEach(btn => {
+        
+    });
+
+    window.addEventListener("scroll", function() {
+
+        const bar = document.getElementById("topbar");
+        const logo = document.getElementById("logo");
+        const spans = document.getElementById("title"); 
+        const buttons = document.querySelectorAll(".Buttons a, .dropdown-parent");
+
+        if (window.scrollY > 45) {
+
+            bar.style.height = "65px";
+            bar.style.backgroundColor = "white";
+            spans.style.color = "black";
+            spans.style.transform = "scale(0.5) translateY(-15px) translateX(-90px)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "50px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(4px) translateX(13px)`; 
+            });
+            document.body.classList.add("scrolled");
+
+        } else {
+
+            bar.style.height = "100px";
+            bar.style.backgroundColor = "#153c7a";
+            spans.style.color = "white";
+            spans.style.transform = "scale(1) translateY(0) translateX(0)";
+            spans.style.transition = "color 0.5s ease, transform 0.5s ease";
+
+            logo.style.height = "85px";
+
+            buttons.forEach(btn => {
+                btn.style.transform = `translateY(0px)`; 
+            });
+            document.body.classList.remove("scrolled"); 
+        }
+    });
+    </script>
+
+</body>
+</html>
